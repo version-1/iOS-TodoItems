@@ -27,7 +27,14 @@ class TodosTableViewController: UITableViewController {
 //    deleteButton.isEnabled = false
 //    deleteButton.tintColor = .clear
     
-    let data = ManagedTodoItem.findAll(in: context)
+    let list = ManagedTodoItem.findAll(in: context)
+    
+    for item in list {
+        let todo = TodoItem()
+        todo.text = item.text ?? ""
+        todo.checked = item.checked
+        todoList.addTodo(item: todo, for: .medium)
+    }
     
   }
   
