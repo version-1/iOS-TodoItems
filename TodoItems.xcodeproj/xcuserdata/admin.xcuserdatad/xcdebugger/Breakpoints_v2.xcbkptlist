@@ -8,14 +8,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "91B14E62-598E-4958-ABC5-F8A548E476FD"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TodoItems/Models/ManagedTodoItem.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "findAll(in:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "TodoItems/Models/ManagedTodoItem.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "findAll(in:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -49,6 +49,102 @@
             startingLineNumber = "38"
             endingLineNumber = "38"
             landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A66FA8D7-9927-4CBB-B9BC-1B0F86A9F96C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TodoItems/Controllers/TodosTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "deleteTodoItems(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "974E552D-F884-46C5-92FE-DAFAFAEA15E7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TodoItems/Models/ManagedTodoItem.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "find(matching:with:in:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "974E552D-F884-46C5-92FE-DAFAFAEA15E7 - a7d67000092a9259"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static TodoItems.ManagedTodoItem.find(matching: TodoItems.TodoItem, with: Swift.String, in: __C.NSManagedObjectContext) throws -&gt; Swift.Optional&lt;TodoItems.ManagedTodoItem&gt;"
+                  moduleName = "TodoItems"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Projects/iOS/TodoItems/TodoItems/Models/ManagedTodoItem.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "989">
+               </Location>
+               <Location
+                  uuid = "974E552D-F884-46C5-92FE-DAFAFAEA15E7 - a7d67000092a9259"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static TodoItems.ManagedTodoItem.find(matching: TodoItems.TodoItem, with: Swift.String, in: __C.NSManagedObjectContext) throws -&gt; Swift.Optional&lt;TodoItems.ManagedTodoItem&gt;"
+                  moduleName = "TodoItems"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/admin/Projects/iOS/TodoItems/TodoItems/Models/ManagedTodoItem.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "1040">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3F87E254-CAAD-4EA6-AF95-2F384C130DC3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TodoItems/Models/ManagedTodoItem.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "find(matching:with:in:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C1331861-E7F2-406A-86C6-DE5174D972D6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TodoItems/Controllers/TodosTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "deleteTodoItems(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

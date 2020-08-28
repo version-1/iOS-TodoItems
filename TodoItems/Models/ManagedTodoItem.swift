@@ -11,6 +11,25 @@ import CoreData
 
 class ManagedTodoItem: NSManagedObject {
     
+    class func find(matching todo: TodoItem, with searchText: String, in context: NSManagedObjectContext) throws -> ManagedTodoItem? {
+        
+        let request: NSFetchRequest<ManagedTodoItem> = ManagedTodoItem.fetchRequest()
+        request.predicate = NSPredicate(format: "text = %@", todo.text)
+        // NSSortDescriptor possible (compound as well)
+        do {
+            let matches = try context.fetch(request)
+            if matches.count > 0 {
+                // assert 'sanity': if condition false ... then print message and interrupt program
+                assert(matches.count == 1, "ManagedTodo.findOrCreateSource -- database inconsistency")
+                let matchedTodo = matches[0]
+                return matchedTodo
+            }
+        } catch {
+            throw error
+        }
+        return nil
+    }
+    
     class func findOrCreate(matching todo: TodoItem, with searchText: String, in context: NSManagedObjectContext) throws -> ManagedTodoItem {
         
         let request: NSFetchRequest<ManagedTodoItem> = ManagedTodoItem.fetchRequest()

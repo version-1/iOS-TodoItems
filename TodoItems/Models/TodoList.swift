@@ -19,11 +19,7 @@ class TodoList {
   private var mediumPriorityTodos: [TodoItem] = []
   private var lowPriorityTodos: [TodoItem] = []
   
-  init() {
-    let item1 = TodoItem()
-    item1.text = "Take a walk"
-    item1.checked = true
-  }
+  init() {}
   
   func todoList(for priority: Priority) -> [TodoItem] {
     switch priority {
