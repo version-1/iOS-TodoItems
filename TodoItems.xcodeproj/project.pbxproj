@@ -17,6 +17,7 @@
 		4E55009B216FD5880046E1F1 /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E55009A216FD5880046E1F1 /* TodoList.swift */; };
 		4E8DAE0E2174F3520084DA71 /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8DAE0D2174F3520084DA71 /* TodoTableViewCell.swift */; };
 		84DB5BBD24F9328300BCA77F /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84DB5BBB24F9328300BCA77F /* Model.xcdatamodeld */; };
+		84DB5BBF24F938AC00BCA77F /* ManagedTodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DB5BBE24F938AC00BCA77F /* ManagedTodoItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4E55009A216FD5880046E1F1 /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
 		4E8DAE0D2174F3520084DA71 /* TodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
 		84DB5BBC24F9328300BCA77F /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		84DB5BBE24F938AC00BCA77F /* ManagedTodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedTodoItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				4E550098216FD51A0046E1F1 /* TodoItem.swift */,
 				4E55009A216FD5880046E1F1 /* TodoList.swift */,
+				84DB5BBE24F938AC00BCA77F /* ManagedTodoItem.swift */,
 				84DB5BBB24F9328300BCA77F /* Model.xcdatamodeld */,
 			);
 			path = Models;
@@ -185,6 +188,7 @@
 			files = (
 				4E40CB9A216FAA1C00116C70 /* AppDelegate.swift in Sources */,
 				4E40CBAC216FAD0A00116C70 /* TodosTableViewController.swift in Sources */,
+				84DB5BBF24F938AC00BCA77F /* ManagedTodoItem.swift in Sources */,
 				4E550099216FD51A0046E1F1 /* TodoItem.swift in Sources */,
 				84DB5BBD24F9328300BCA77F /* Model.xcdatamodeld in Sources */,
 				4E8DAE0E2174F3520084DA71 /* TodoTableViewCell.swift in Sources */,

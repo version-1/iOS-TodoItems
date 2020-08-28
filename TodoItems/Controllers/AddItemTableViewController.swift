@@ -22,6 +22,8 @@ class AddItemTableViewController: UITableViewController {
   @IBOutlet weak var doneBarButton: UIBarButtonItem!
   weak var delegate: AddItemViewControllerDelegate?
   weak var itemToEdit: TodoItem?
+    
+  private var container: NSPersistentContainer? = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer
   
   @IBAction func cancel(_ sender: UIBarButtonItem) {
     delegate?.addItemDidCancel()
@@ -36,6 +38,10 @@ class AddItemTableViewController: UITableViewController {
         let newItem = TodoItem()
         newItem.text = text
         newItem.checked = false
+        container?.performBackgroundTask { [weak self] context in
+          try? ManagedTodoItem.findOrCreate(matching: newItem, with: text, in: context)
+          try? context.save()
+        }
         delegate?.addItemDidFinishAdding(newItem)
       }
     }

@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import CoreData
 
 class TodosTableViewController: UITableViewController {
   
   @IBOutlet var deleteButton: UIBarButtonItem!
   var todoList: TodoList = TodoList()
+  private var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -24,6 +26,9 @@ class TodosTableViewController: UITableViewController {
     // hiding delete bar buttom item
 //    deleteButton.isEnabled = false
 //    deleteButton.tintColor = .clear
+    
+    let data = ManagedTodoItem.findAll(in: context)
+    
   }
   
   override func setEditing(_ editing: Bool, animated: Bool) {

@@ -23,21 +23,6 @@ class TodoList {
     let item1 = TodoItem()
     item1.text = "Take a walk"
     item1.checked = true
-    let item2 = TodoItem()
-    item2.text = "Study iOS"
-    item2.checked = true
-    let item3 = TodoItem()
-    item3.text = "Update Resume"
-    let item4 = TodoItem()
-    item4.text = "Watch Netflix"
-    let item5 = TodoItem()
-    item5.text = "Study Design pattern"
-    item5.checked = true
-    addTodo(item: item1, for: .high)
-    addTodo(item: item2, for: .medium)
-    addTodo(item: item3, for: .medium)
-    addTodo(item: item4, for: .low)
-    addTodo(item: item5, for: .high)
   }
   
   func todoList(for priority: Priority) -> [TodoItem] {
